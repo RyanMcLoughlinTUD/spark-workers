@@ -43,7 +43,7 @@
     "items": [
       {
         "key": "startup-script",
-        "value": "sudo apt -y update\ncurl -output spark.tgz https://dlcdn.apache.org/spark/spark-3.5.0/spark-3.5.0-bin-hadoop3.tgz\napt -y install default-jdk\ntar -xzvf spark.tgz\n./spark-3.5.0-bin-hadoop3/sbin/start-slave spark://spark-master.europe-west1-b.c.feisty-vector-406610.internal:7077 "
+        "value": "sudo apt -y update\ncurl --output spark.tgz https://dlcdn.apache.org/spark/spark-3.5.0/spark-3.5.0-bin-hadoop3.tgz\napt -y install default-jdk\ntar -xzvf spark.tgz\n./spark-3.5.0-bin-hadoop3/sbin/start-worker.sh spark://spark-master.europe-west1-b.c.feisty-vector-406610.internal:7077 "
       }
     ]
   },
